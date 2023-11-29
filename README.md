@@ -16,7 +16,7 @@ This application works by running a Mac Shortcut that takes the following action
 4) Plays the sound returned by our Worker using the "Play sound" action
 
 To do this you can create a new Shortcut called "GPTReact" and copy the Shortcut configuration in this screenshot:
-<img width="695" alt="Shortcut Settings" src="https://github.com/rickyrobinett/gptreact/assets/838096/31384c6b-ab83-4f58-8b2f-e683b6f23bc1">
+<img width="695" alt="Screenshot 2023-11-29 at 9 23 36 AM" src="https://github.com/rickyrobinett/gptreact/assets/838096/3f90e4e5-4ef7-41a3-9313-6b9bf050818d">
 
 # Set up (Cloudflare Workeres)
 
