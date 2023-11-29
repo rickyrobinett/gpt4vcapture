@@ -19,7 +19,7 @@ To do this you can create a new Shortcut called "GPTReact" and copy the Shortcut
 
 <img width="695" alt="Screenshot 2023-11-29 at 9 23 36 AM" src="https://github.com/rickyrobinett/gptreact/assets/838096/3f90e4e5-4ef7-41a3-9313-6b9bf050818d">
 
-# Set up (Cloudflare Workeres)
+# Set up (Cloudflare Workers)
 
 Clone this repo and then run:
 ```
