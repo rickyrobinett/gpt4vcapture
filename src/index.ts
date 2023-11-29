@@ -8,21 +8,16 @@ type Bindings = {
 
 const app = new Hono<{ Bindings: Bindings }>()
 
-const systemPrompt: ChatCompletionMessageParam[] = [
-    {
-        role: "system",
-        content: `You are Artificial Intelligence (GPT) receiving images and reacting to them in the style of YouTube reactions. Be funny.`
-    }
-];
-
-let messages: ChatCompletionMessageParam[] = systemPrompt;
-
-app.get('/reset', async (c) => {
-    messages = systemPrompt;
-    c.render("Reset complete");
-});
-
 app.post('/react', async (c) => {
+    const systemPrompt: ChatCompletionMessageParam[] = [
+        {
+            role: "system",
+            content: `You are Artificial Intelligence (GPT) receiving images and reacting to them in the style of YouTube reactions. Be funny.`
+        }
+    ];
+    
+    let messages: ChatCompletionMessageParam[] = systemPrompt;
+    
     const openai = new OpenAI({
         apiKey:  c.env.OPENAI_API_KEY
     });
