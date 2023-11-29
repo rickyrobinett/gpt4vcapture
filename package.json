@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.ts --remote",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "Buffer": "^0.0.0",
+    "FileReader": "^0.10.2",
+    "fs": "^0.0.1-security",
+    "hono": "^3.9.2",
+    "openai": "^4.19.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230914.0",
+    "wrangler": "^3.14.0"
+  }
+}
